@@ -1,0 +1,60 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-bg {
+  position: relative;
+}
+
+.body-bg::before {
+  content: "";
+  background: var(--cor-1) url("../../img/background-home.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  opacity: 0.2;
+  position: absolute;
+  z-index: -1;
+}
+
+.botao {
+  display: inline-block;
+  background-color: var(--cor-p1);
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--cor-0);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: max-content;
+}
+
+.botaoBranco {
+  display: inline-block;
+  background-color: var(--cor-1);
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--cor-p1);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: max-content;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.botaoBranco:hover {
+  background: var(--cor-p1);
+  color: var(--cor-1);
+  border: 1px solid var(--cor-1);
+}

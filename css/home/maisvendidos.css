@@ -1,0 +1,83 @@
+.mais-vendidos::before {
+  content: "";
+  width: 350px;
+  height: 4px;
+  background-color: var(--cor-p1);
+  left: -300px;
+  top: -10px;
+  position: absolute;
+}
+
+.mais-vendidos {
+  position: relative;
+  font-size: 2.5rem;
+}
+
+div.container p {
+  font-size: 1.25rem;
+}
+
+.vendidos {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.container-vendidos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 30px 0px;
+}
+
+.favoritos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.favoritos h2 {
+  padding-left: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.favoritos h2::before {
+  content: "";
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  background: var(--cor-p1);
+  left: 0;
+}
+
+.imagem-favoritos {
+  position: relative;
+}
+
+.imagem-favoritos::before {
+  content: "";
+  position: absolute;
+  width: 325px;
+  height: 325px;
+  border: 3px solid var(--cor-p1);
+  left: 50px;
+  top: -25px;
+  z-index: -1;
+}
+
+@media (width <= 1200px) {
+  .imagem-favoritos::before {
+    display: none;
+  }
+}
+
+@media (width <= 800px) {
+  .container-vendidos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 30px 0px;
+  }
+}

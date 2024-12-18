@@ -1,0 +1,33 @@
+.max-size {
+  max-width: 40ch;
+}
+
+div.rotina {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.img-rotina {
+  max-width: 100%;
+  height: 100%;
+}
+
+.img-rotina-div {
+  justify-self: end;
+  align-self: center;
+}
+
+.rotina-bg {
+  box-shadow: inset 0 80px rgba(0, 0, 0, 0), inset 0 -80px rgba(0, 0, 0, 0);
+  margin-bottom: 100px;
+}
+
+.rotina h1 {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.rotina p {
+  margin-bottom: 20px;
+}
